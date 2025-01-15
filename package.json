@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --outfile=public/app.js --minify",
-    "start": "serve . --single",
+    "build": "vite build", 
+    "preview": "vite preview", 
     "dev": "vite"
   },
   "devDependencies": {
