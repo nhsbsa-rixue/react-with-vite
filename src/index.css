@@ -1,78 +1,40 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
-    --radius: 0.5rem;
+    --background: 0 5.95% 63.73%; 
+    --foreground: 30 18.18% 95.69%; 
+    --card: 10.17 63.44% 81.76%; 
+    --card-foreground: 339 32.26% 36.47%; 
+    --primary: 337.5 16.26% 48.24%; 
+    --primary-foreground: 140 7.32% 40.20%; 
+    --secondary: 97.06 18.09% 36.86%; 
+    --secondary-foreground: 105 29.63% 78.82%; 
+    --muted: 210 40% 96.1%; 
+    --muted-foreground: 215.4 16.3% 46.9%; 
+    --accent: 46.83 37.42% 79.21%; 
+    --accent-foreground: 222.2 47.4% 11.20%; 
+    --popover: 0 0% 100%; 
+    --popover-foreground: 222.2 84.00% 4.90%; 
+    --destructive: 0 84.2% 60.2%; 
+    --destructive-foreground: 210 40% 98%; 
+    --border: 214.3 31.8% 91.4%; 
+    --input: 214.3 31.8% 91.4%; 
+    --ring: 222.2 84.00% 4.90%; 
+    --chart-1: 12 76.00% 61.00%; 
+    --chart-2: 173 58.00% 39%; 
+    --chart-3: 197 37.00% 24.00%; 
+    --chart-4: 43 74.00% 66.00%; 
+    --chart-5: 27 87.00% 67.00%; 
+    }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
