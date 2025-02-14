@@ -1,28 +1,28 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import NavBar from "@/components/nav-bar";
-import Intro from "@/components/intro";
+import NavBar from "@/components/nav-bar/index";
+import Footer from "@/components/footer/index";
+import Home from "@/components/home/index";
+import Shop from "@/components/shop/index";
+import Contact from "@/components/contact/index";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
-    <div style={{ height: '9999px' }}>
-      <NavBar />
-      <Intro />
-      <h1>Vite + React</h1>
-      <div className="card">
-        <Button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/shop" Component={Shop} />
+          <Route path="/contact" Component={Contact} />
+        </Routes>
+        <Footer />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </Router>
   );
 }
 

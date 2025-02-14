@@ -53,6 +53,8 @@ export default tseslint.config(
       "import/newline-after-import": ["error", { count: 1 }],
       "no-unused-vars": "error",
       "no-console": "warn",
+      '@typescript-eslint/no-explicit-any': 'off', // Allow 'any' type
+      '@typescript-eslint/no-var-requires': 'off', // Allow require statements
       quotes: [
         "error",
         "double",
