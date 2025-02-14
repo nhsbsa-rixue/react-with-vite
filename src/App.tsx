@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+// import { useState } from "react";
+// import { Button } from "@/components/ui/button";
 import NavBar from "@/components/nav-bar/index";
 import Footer from "@/components/footer/index";
 import Home from "@/components/home/index";

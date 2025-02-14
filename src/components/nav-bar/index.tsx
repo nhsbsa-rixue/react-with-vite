@@ -1,13 +1,6 @@
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-
-import logo from "/assets/logo.png";
 import "./style.css";
-
-import {
-  Avatar,
-  AvatarImage,
-} from "@/components/ui/avatar"
 
 export default () => {
   useEffect(() => {
