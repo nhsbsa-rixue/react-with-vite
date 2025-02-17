@@ -21,7 +21,7 @@ export default () => {
 
       <div className="flower-shop-info-box">
         <p className="flower-shop-description-text-style">
-          Handcrafted with love, our high-quality crochet flowers never fade, and our dolls bring warmth and charm to any home. Timeless beauty in every stitch!
+          Handcrafted with love, our high-quality crochet flowers never fade, and our crafts bring warmth and charm to any home. Timeless beauty in every stitch!
         </p>
       </div>
 

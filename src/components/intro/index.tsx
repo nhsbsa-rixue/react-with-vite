@@ -12,7 +12,7 @@ export default () => {
               <br/>
               Forever crochet made
             </p>
-            <p className="flower-description-text-style">Browse between hounders of flowers and dolls</p>
+            <p className="flower-description-text-style">Browse between hundreds of flowers and crafts</p>
             {/* Button Component starts here. We've generated code using MUI Base. See other options in "Component library" dropdown in Settings */}
             <Button className="browse-button-style">Browse</Button>
           </div>
