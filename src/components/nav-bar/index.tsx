@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import "./style.css";
 
+import CartButton from "../paypal/CartButton";
+
 export default () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +20,6 @@ export default () => {
   }, []);
  return (
   <nav className="nav-bar" >
-    
       <div className="header-container">
         <p className="title-section">
           <span className="vibrant-heading">Forever</span>
@@ -32,11 +33,11 @@ export default () => {
         
         </div>
         <div className="header-navigation">
+          <CartButton />
           {/* <SvgIcon1 className="svg-container" />
           <SvgIcon2 className="svg-container1" /> */}
         </div>
       </div>
-
 </nav>
  )
 

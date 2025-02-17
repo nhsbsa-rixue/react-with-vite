@@ -5,6 +5,7 @@ import Footer from "@/components/footer/index";
 import Home from "@/components/home/index";
 import Shop from "@/components/shop/index";
 import Contact from "@/components/contact/index";
+// import { PayPalProvider } from "@/context/PayPalContext";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -12,6 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
 
   return (
+    // <PayPalProvider>
     <Router>
       <div className="App">
         <NavBar />
@@ -23,6 +25,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    // </PayPalProvider>
   );
 }
 

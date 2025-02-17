@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/fav.ico" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://cdn.sprig.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forever Flowers</title>
   </head>
   <body>
     <div id="root"></div>
+    <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="8Y2C2R9PGPLKN"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
