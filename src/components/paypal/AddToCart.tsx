@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import loadPaypal from "./loadPaypal"
 
 declare global {
   namespace JSX {
@@ -19,16 +20,14 @@ const AddToCart: React.FC = () => {
 
   useEffect(() => {
     if (window.cartPaypal) {
-      
       setBtn(window.cartPaypal.AddToCart({ id: "GL3EHYBNES48W" }));
-
     }
   }, []);
 
   return (
-    <>
+    <div className="w-full">
     <paypal-add-to-cart-button data-id="GL3EHYBNES48W" ></paypal-add-to-cart-button>
-    </>
+    </div>
   );
 }
 
