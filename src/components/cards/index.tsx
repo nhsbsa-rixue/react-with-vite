@@ -6,8 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { BellRing, Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { BellRing  } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import AddToCart from "../paypal/AddToCart";
